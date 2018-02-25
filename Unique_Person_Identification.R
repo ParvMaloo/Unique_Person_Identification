@@ -17,6 +17,9 @@ str(unq)
 new_matrix <- matrix(c(1), nrow = nrow(unq), ncol = nrow(unq))
 
 #Now we will start the process of removing similar rows
+#First load 'stringdist' package
+library(stringdist)
+
 #We will use for loop with if statement
 #Duplicated rows were removed earlier so as to increase the speed of for loop
 for(j in 1:nrow(unq)){
@@ -28,8 +31,8 @@ for(j in 1:nrow(unq)){
 #Extracting the indices of '0' elements in new_matrix
 x <- which(new_matrix == 0, arr.ind = TRUE)
 #We need only the column values
-
 y <- x[,2]
+  
 #There are duplicate values in it as some rows have more than 2 similar other rows
 #Extracting only distinct rows
 z <- y[!duplicated(y)]
