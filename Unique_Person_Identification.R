@@ -44,3 +44,7 @@ unq <- unq[-c(z),]
 #Looking into final table
 View(unq)
 str(unq)
+
+#Exporting the table
+write.csv(unq, "Unique_Person_Data.csv")
+  
