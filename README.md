@@ -4,7 +4,7 @@ Steps to start with the script:
 1) You need RStudio in order to run the script
 2) Select the directory where the data sheet is located
 3) If name of the data sheet is different then change it's name by writing in read.csv command
-4) You may need to install package 'dplyr'(if not already installed)
+4) You may need to install package 'dplyr' and 'stringdist'(if not already installed)
 5) Now run the complete script to get the desired answer
 
 What do the specific part do?
